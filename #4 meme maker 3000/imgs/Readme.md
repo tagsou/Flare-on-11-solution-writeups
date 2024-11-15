@@ -1,7 +1,7 @@
 
 for challenge 4 we given a obfuscated javascript file. to deobfuscated it I used an online javascript deobfuscator.Made the code much easier to read.
 
-![Alt text for the image](./img/meme.png)
+![Alt text for the image](meme.png)
 
 
 
@@ -20,5 +20,5 @@ The last condition a0c.indexOf(d) == 22 specifies that d must be a0c[22], which 
 
 once these values are set we should get the flag! I set these values in the devtools console but you could also just edit the code with the values.
 
-![Alt text for the image](./img/flagpopup.png)
+![Alt text for the image](flagpopup.png)
 
