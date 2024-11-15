@@ -1,4 +1,4 @@
-This was my favorite challenge but also the hardest for me but I learnt a ton. 
+This was my favourite challenge but also the hardest for me although I learnt a ton. 
 I realized that the challenge was a based on the [XZ-BACKDOOR](https://www.wired.com/story/xz-backdoor-everything-you-need-to-know/) incident that happened earlier this year. 
 We given a copy of a full Linux filesystem. I was abit confused at first but I got hinted by the description that I had to find stolen data (the flag!) and that it had something to do with the **SSH daemon**. 
 I applied some basic digital forensics linux techniques and found this ``Flag.txt``
@@ -36,7 +36,7 @@ If only,lol😂. later I found a **SSHD core dump** file that I thought I need t
 The coredump file would be really useful in figureing out what caused the crash in the server as it has everything in memory at the time of the crash. 
 I opened the coredump in gdb for debugging and found out that a segfault in the coredump was caused by ``/lib/x86_64-linux-gnu/liblzma.so.5``.
 
-I decided to open the liblzma library file in Ghidra and quickly noticed a file that definitely looked like a backdoor. Essentially, what this function does is when RSA_public_decrypt gets called in ``Opensshd`` it hooks it with its own malicious function.
+I decided to open the liblzma library file in Ghidra and quickly noticed a file that definitely looked like a backdoor. Essentially, what this function does is when ``RSA_public_decrypt gets called`` in ``Opensshd`` it hooks it with its own malicious function.
 
 ![Screenshot 2024-11-13 001055](https://github.com/user-attachments/assets/931fb221-ab34-4a10-b647-42582168c049)
 
