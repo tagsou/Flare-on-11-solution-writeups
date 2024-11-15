@@ -11,4 +11,4 @@ It then encodes the XOR'ed string to base64 and compares it with another string:
 
 Now just run the exe from the command line again, do the math problems, input the checksum value, and it should unlock an img in %LocalAppData%\REAL_FLAREON_FLAG.jpg.
 
-![Alt text for the image](REAL_FLAREON_FLAG.jpg)
+![Alt text for the image](REALFLAG.JPG)
