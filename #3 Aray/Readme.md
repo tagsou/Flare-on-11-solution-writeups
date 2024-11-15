@@ -13,5 +13,5 @@ hash.crc32(78, 2) == 0x7cab8d64
 ```
 I opened a hex editor and starting typing in each offset and watched how the flag formed!😉
 
-![Alt text](./img/image.png)
+![Alt text](./img/flag.png)
 
